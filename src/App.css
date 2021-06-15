@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  width: 600px;
+  height: 600px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(3, 200px);
+}
+.square {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  font-size: 90px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.square:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.status {
+  position: absolute;
+  font-size: 50px;
+  top: 0;
+}
